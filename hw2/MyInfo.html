@@ -1,0 +1,133 @@
+<html>
+    <head>
+        <style>
+            .top_menu{
+                background-color: #CCCCCC;
+                text-align: center;
+            }
+            .menu{
+                text-align: center;
+            }
+            .web_html{
+                text-align: center;
+                font-weight: bold;
+            }
+            .web_php{
+                text-align: center;
+            }
+            .menu_underline{
+                text-decoration: underline;
+            }
+            .menu_color{
+                color: red;
+            }
+            .menu_bold{
+                font-weight: bold;
+            }
+            .menu_strike{
+                text-decoration-line: line-through;
+            }
+            .img_style{
+                width: 200;
+                height: 300;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 10;
+                display: block;
+            }
+            .img_name{
+                text-align: center;
+                margin-bottom: 5;
+            }
+            .bracket_size{
+                width: 100;
+                height: 1000;
+            }
+        </style>
+    </head>
+    <body>
+        <table cellpadding="5" cellspacing="1" align="center">
+            <tr>
+                <td><img class="bracket_size" src="left_bracket.png"></td>
+                <td>
+                    <table border>
+                        <tr>
+                            <td class="top_menu" colspan="2">My Information</td>
+                        </tr>
+                        <tr>
+                            <td class="menu">Name</td>
+                            <td>Changgeon Ko</td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="menu"><u>Password</u></td> -->
+                            <td class="menu menu_underline">Password</td>
+                            <td><input type="text"> (Include characters and numbers)</td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="menu"><Strike>Select Grade</Strike></td>-->
+                            <td class="menu menu_strike">Select Grade</td>
+                            <td>
+                                <select>
+                                    <option value="default">select your grade</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="menu"><font color="red">Select file</font></td> -->
+                            <td class="menu menu_color">Select file</td>
+                            <td><input type="file"></td>
+                        </tr>
+                        <tr>
+                            <!-- <td class="menu"><b>Hobby</b></td> -->
+                            <td class="menu menu_bold">Hobby</td>
+                            <td>
+                                <input type="checkbox" value="1" name="book">Reading Books
+                                <input type="checkbox" value="2" name="movie">Watching Movies
+                                <input type="checkbox" value="3" name="sports">Playing Sports
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menu">Living Place</td>
+                            <td>
+                                <input type="radio" value="1" name="place">Dormitory
+                                <input type="radio" value="2" name="place">House
+                                <input type="radio" value="3" name="place">Studio
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="menu" rowspan="2">Different Clothes</td>
+                            <td><img class="img_style" src="white.png"><p class="img_name">White</p></td>
+                        </tr>
+                        <tr>
+                            <td><img class="img_style" src="black.png"><p class="img_name">Black</p></td>
+                        </tr>
+                        <tr>
+                            <td class="menu" rowspan="2">Websites</td>
+                            <td class="web_html">1. HTML Tutorials<br>
+                                <ul>
+                                    <li><a href="http://www.w3schools.com/html/default.asp" target="_blank">w3schools html tutorial</a></li>
+                                    <li><a href="http://www.homejjang.com/03/html.php" target="_blank">homejjang html tutorial</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="web_php">2. PHP Tutorials<br>
+                                <ol>
+                                    <li><a href="http://www.w3schools.com/php/default.asp" target="_blank">w3schools php tutorials</a></li>
+                                    <li><a href="http://www.bitnami.com/tag/php" target="_blank">Bitnami php tutorial</a></li>
+                                </ol>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td><img class="bracket_size" src="right_bracket.png"></td>
+            </tr>
+        </table>
+    </body>
+</html>

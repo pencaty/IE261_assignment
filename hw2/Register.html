@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <style>
+            .top_menu{
+                background-color: #CCCCCC;
+                text-align: center;
+            }
+            .second_element{
+                margin-left: 10px;
+            }
+            .big_box{
+                width: 250px;
+            }
+            .small_box{
+                width: 75px;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" cellpadding="5" cellspacing="1" align="center">
+            <tr>
+                <td colspan="2" class="top_menu"><b>Basic Information</b></td>
+            </tr>
+            <tr>
+                <td>*ID</td>
+                <td><input type="text"><input class="second_element" type="button" value="Duplicate Inspection"></td>
+            </tr>
+            <tr>
+                <td>*Password</td>
+                <td><input type="password"> (Include characters and numbers)</td>
+            </tr>
+            <tr>
+                <td>*Password<br>Confirm</td>
+                <td><input type="password"> (Confirm your password)</td>
+            </tr>
+            <tr>
+                <td>*Name (English)</td>
+                <td><input type="text"> (Format of 'Eddie Chung')</td>
+            </tr>
+            <tr>
+                <td>*E-mail Address</td>
+                <td><input class="big_box" type="text"> (university email)</td>
+            </tr>
+            
+            
+            <tr>
+                <td colspan="2" class="top_menu"><b>Private Information</b></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Address</td>
+                <td><input type="text"><input class="second_element" type="button" value="Post Number Search"></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input class="small_box" type="text" maxlength="4"> - <input class="small_box" type="text" maxlength="4"> - <input class="small_box" type="text" maxlength="4"></td>
+            </tr>
+            <tr>
+                <td>Degree</td>
+                <td>
+                    <select>
+                        <option value="default">Select</option>
+                        <option value="undergraduate">Undergraduate</option>
+                        <option value="bachelor">Bachelor</option>
+                        <option value="master">Master</option>
+                        <option value="doctor">Doctor</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Programming<br>Language</td>
+                <td>
+                    <input type="checkbox" value="1" name="lang_c">C++ 
+                    <input type="checkbox" value="2" name="lang_j">Java
+                    <input type="checkbox" value="3" name="lang_p">Python
+                    <input type="checkbox" value="4" name="lang_m">Matlab
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" value="1" name="gender">Male
+                    <input type="radio" value="2" name="gender">Female
+                </td>
+            </tr>
+            <tr>
+                <td>Strength</td>
+                <td><textarea name="strength" rows="5" cols="60"></textarea></td>
+            </tr>
+            <tr>
+                <td>Your Photo</td>
+                <td><input type="text"><input class="second_element" type="file" name="photo"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="button" name="but_r" value="Register"><input class="second_element" type="button" name="but_c" value="Cancel"></td>
+            </tr>
+        </table>
+    </body>
+</html>
